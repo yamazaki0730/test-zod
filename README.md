@@ -6,6 +6,9 @@ cd packages/main
 pnpm build
 ```
 
+## Zod バージョンのミスマッチ
+Zodのバージョンが一致していないとエラーが出る
+
 ## tsconfig
 ### `declaration: true/false`
 - packages/main/Declaration.ts

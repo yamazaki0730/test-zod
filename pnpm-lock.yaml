@@ -5,16 +5,6 @@ importers:
   .:
     specifiers: {}
 
-  packages:
-
-    specifiers:
-      typescript: ^5.0.4
-      zod: ^3.21.4
-
-    devDependencies:
-      typescript: 5.0.4
-      zod: 3.21.4
-
   packages/declaration-false:
     specifiers:
       typescript: ^5.0.4
@@ -26,23 +16,23 @@ importers:
   packages/declaration-true:
     specifiers:
       typescript: ^5.0.4
-      zod: ^3.21.4
+      zod: 3.20.6
     devDependencies:
       typescript: 5.0.4
-      zod: 3.21.4
+      zod: 3.20.6
 
   packages/main:
     specifiers:
-      declaration-false: workspace:^1.0.0
-      declaration-true: workspace:^1.0.0
+      declaration-false: workspace:*
+      declaration-true: workspace:*
       typescript: ^5.0.4
-      zod: ^3.21.4
+      zod: 3.20.6
     dependencies:
       declaration-false: link:../declaration-false
       declaration-true: link:../declaration-true
     devDependencies:
       typescript: 5.0.4
-      zod: 3.21.4
+      zod: 3.20.6
 
 packages:
 
@@ -50,6 +40,10 @@ packages:
     resolution: {integrity: sha512-cW9T5W9xY37cc+jfEnaUvX91foxtHkza3Nw3wkoF4sSlKn0MONdkdEndig/qPBWXNkmplh3NzayQzCiHM4/hqw==}
     engines: {node: '>=12.20'}
     hasBin: true
+    dev: true
+
+  /zod/3.20.6:
+    resolution: {integrity: sha512-oyu0m54SGCtzh6EClBVqDDlAYRz4jrVtKwQ7ZnsEmMI9HnzuZFj8QFwAY1M5uniIYACdGvv0PBWPF2kO0aNofA==}
     dev: true
 
   /zod/3.21.4:
